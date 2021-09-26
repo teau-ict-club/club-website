@@ -7,7 +7,7 @@ Design Url : TO DO
 ### Live Release
 Live Site : TO DO
 
-## Description
+## Project Description
 
 TO DO
 
@@ -16,13 +16,7 @@ TO DO
 To DO
 
 ## Setup/Installation Requirements
-
-- - on a linux distro / Mac
-- python3 installed
-- ```git clone https://github.com/teau-ict-club/club-website.git && cd club-website && sudo python3 -m http.server 80 & && open http://localhost/```
-
-- - on windows
-- - TO DO
+TO DO
 
 ## Contributions
 If you'd like to contribute.
