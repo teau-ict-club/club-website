@@ -8,7 +8,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="public/css/style.css">
-    
+    <script>
+
+        function validate() {
+            var validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
+            if (input.value.match(validRegex)) {
+
+                alert("Valid email address!");
+
+                document.login-text.email-text.focus();
+
+                return true;
+
+            } else {
+
+                alert("Invalid email address!");
+
+                document.login-text.email-text.focus();
+
+                return false;
+
+            }
+        }
+    </script>
 </head>
 
 <body">
