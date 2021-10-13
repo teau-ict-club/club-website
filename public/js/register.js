@@ -1,4 +1,4 @@
-// only the index page javascript gets edited in this file
+// only the register page javascript gets edited in this file
 var x=document.getElementById('login');
 var y=document.getElementById('register');
 var z=document.getElementById('btn');
