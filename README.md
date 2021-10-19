@@ -1,5 +1,5 @@
 # club-website
-The Ofiicial TEAU ICT CLUB Website.
+The Oficial TEAU ICT CLUB Website.
 
 ### Project Design
 Design Url : TO DO
@@ -24,7 +24,7 @@ If you'd like to contribute.
 - Create a new branch (git checkout -b feature)
 - Make the appropriate changes in the files
 - Add changes to reflect the changes made
-- Commit your changes (git commit -am 'Improve/Add feature')
+- Commit your changes (git commit -m 'Improve/Add feature')
 - Push to the branch (git push origin feature)
 - Create a Pull Request
 [Make sure your code is properly commented and follows a proper identation scheme]
@@ -41,7 +41,7 @@ TO DO
 
 ## Connect With Us
 
-<a href="mailto:info@teau.ac.ke">Email Us</a>
+<a href="mailto:">Email Us at : TO DO</a>
 
      
 ### License

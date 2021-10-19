@@ -2,32 +2,11 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Regform</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="css/register.css">
 </head>
 <body>
     <div class="full-page">
-        <div class="navbar">
-            <div>
-                <a href="website.html">REGISTRATION</a>
-                <nav>
-                    <ul id="menuItems">
-                        <li><a href="#">HOME</a></li>
-                        <li><a href="#">ABOUT US</a></li>
-                        <li><a href="#">SERVICES</a></li>
-                        <li><a href="#">CONTACTS</a></li>
-                        <li><a href="#"></a></li>
-                        <li><button class="loginbtn"
-                             onclick="document.getElementById(
-                                 'login-form')
-                             .style.display='block'"
-                             style="width:auto;">Login</button>
-                            </li>
-
-                    </ul>
-                </nav>
-            </div>
-        </div>
             <div id="login-form"class="login-page">
                 <div class="form-box">
                     <div class="button-box">
@@ -36,7 +15,7 @@
                         class='toggle-btn'>Log In                    
                         </button>
                         <button type="button"onclick="register()"
-                        class='toggle-btn'>Register              
+                        class='toggle-btn'>Sign Up              
                         </button>
                     
                     </div>
@@ -72,36 +51,6 @@
                 </div>
             </div>
         </div>
-        <script>
-            var x=document.getElementById('login');
-            var y=document.getElementById('register');
-            var z=document.getElementById('btn');
-            function register()
-            {
-                x.style.left='-400px';
-                y.style.left='50px';
-                z.style.left='110px';
-             
-            }
-            function Login()
-            { 
-                x.style.left='50px';
-                y.style.left='450px';
-                z.style.left='0px';
-            }
-        </script>
-        <script>
-            var modal = document.getElementById('login-form');
-            window.onclick = function(event)
-            {
-                if (event.target == modal)
-                {
-                    modal.style.display = "none";
-                }
-            }
-
-        </script>
-
-    
+        <script src="js/register.js"></script>  
 </body>
 </html>
