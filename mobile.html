@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
+<!-- jQuery -->
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>   
+    <title>Document</title>
+</head>
+<body>
+    <div id="content">
+        <div id="left">
+            <table>
+                <tr>
+                    <td class="bg">
+                         <a href="index.html">Welcome</a> <br>
+                         <a href="">General resources</a> <br>
+                         <a href="">ICT Club Announcements</a> <br>
+                        <a href="webdev.html">Web developers</a> <br>
+                        <a href="mobile.html">Mobile developers</a> <br>
+                        <a href="cybersec.html">Cyber Security</a> <br>
+                        <a href="graphicsdsgn.html">Graphicsx & UI/UX design</a> <br>
+                        <a href="machinelng.html">ML & Data Science</a> <br>
+                        <a href="">Calendar of Events</a> <br>
+                        <a href="netw.html">Networking</a> <br>
+                        <a href="">chit-chat</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div id="center">
+            <div class="c-center">
+                <h1 class="header">Mobile developers</h1>
+                <a class="a-web" href="">Join Us</a> <br><br>
+                <img style="padding: 2%;" class="image" src="images/mobile2.jpg" alt="" width=70% height=250px%> <br><br>
+                <h1 style="margin: 2%; padding: 2%;">Projects</h1>
+                <ul>
+                    <li style="margin-left: 3%;"> 
+                       <a style="color: blue;" href="">School Club App</a>
+                    </li>
+                </ul>
+                <div>
+                    <h1 style="margin-left: 2%; padding: 2%;">Activities</h1>
+                <ul>
+                    <li style="margin-left: 3%;"> 
+                        School club App
+                    </li>
+                </ul>
+                </div>
+                <div>
+                    <h1 style="margin: 2%; padding: 2%;">Achievements</h1>
+                <ul>
+                    <li style="margin-left: 3%;"> 
+                        School club App
+                    </li>
+                </ul>
+                </div>
+
+                <div>
+                    
+                    <div style="margin-top: 10%;" class="comment">
+                        <h1 style="margin: 2%;margin-top: 5%; color: #4cd137;">Lets Chat here</h1>
+                        <!--Comment Section appears here-->
+                         <section id="app">
+                             <div class="container">
+                               <div class="row">
+                                 <div class="col-6">
+                                   <div class="comment">
+                                 <p v-for="items in item" v-text="items"></p>
+                                   </div><!--End Comment-->
+                                   </div><!--End col -->
+                                   </div><!-- End row -->
+                               <div class="row">
+                                 <div class="col-6">
+                               <textarea type="text" class="input" placeholder="Write a comment" v-model="newItem" @keyup.enter="addItem()"></textarea>
+                                   <button v-on:click="addItem()" class='primaryContained float-right' type="submit">Add Comment</button>
+                                 </div><!-- End col -->
+                               </div><!--End Row -->
+                             </div><!--End Container -->
+                           </section><!-- end App -->
+                     </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="right">
+            <section class="team">
+                <div class="container-team">
+                        <h1 style="text-align: center;">OUR TEAM</h1>
+                     <div class="row">
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img style="float: center;" src="images/linus.jpg" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                    Linus Mugera Developer <br>
+                                    <a style="color: blue;" href="">Email</a>
+                                    <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Kimberly Msabeni Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Muriithi Gakuru Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Daniel Crispa Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Chalie Chalie Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Mike Wanyua Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Christine Naito Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Erastus Erastus Developer <br>
+                                <a style="color: blue;" href="">Email</a>
+                                <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="img-box, col-md-3">
+                                <div id = img-left>
+                                <img src="images/" alt="" class="img-responsive"  >
+                            </div>
+                            <div id="inf-right">
+                                Name Name Developer <br>
+                                 <a style="color: blue;" href="">Email</a>
+                                 <a style="color: blue;" href="">Linkedn</a>
+                            </div> 
+                          </div>
+                        </div>
+                     </div>       
+                </div>
+            </section>
+        </div>
+        <script src="javascript/index.js"></script>
+</body>
+</html>
