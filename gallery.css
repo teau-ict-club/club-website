@@ -107,6 +107,13 @@ a{
     margin-right: 1rem;
     transition: 2000ms;
 }
+.gallery .img-container.hide{
+    display: none;
+}
+.gallery .img-container.show {
+    display: grid;
+    transition: 0.5s ease;
+}
 .img-container{
     position: relative;
     object-fit: cover;
@@ -117,6 +124,11 @@ a{
     3px 3px 5px rgba(94, 104, 121, 0.507);
     cursor: pointer;
     transition: .5s;
+    z-index: 1;
+    overflow: hidden;
+}
+.img-container img:hover{
+    transform: scale(1.1);
 }
 .img-container img{
     width: 100%;
@@ -124,6 +136,7 @@ a{
     object-fit: cover;
     border-radius: 10px;
     transition: .5s;
+    z-index: 700;
 }
 .img-container::before {
     content: 'Gallery';
@@ -151,7 +164,7 @@ input{
     margin-bottom: 10px;
     align-items: center;
 }
-label{
+span{
     margin: 0 5px;
     height: 2rem;
     display: flex;
@@ -168,47 +181,10 @@ label{
     font-size: 1rem;
     transition: .5s;
 }
-label:hover{
+.active, span:hover {
     background: rgba(120, 230, 103, 1);
     border-color: rgb(255, 255, 255);
     color: white;
+    cursor: pointer;
 }
 
-#check:checked ~ .buttons-bar .gallery .img-container{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#check1:checked ~ .buttons-bar .gallery .Web{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#check2:checked ~ .buttons-bar .gallery .Mobile{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#check2:checked~.buttons-bar .gallery .Web
-#check2:checked~.buttons-bar .gallery .cyber
-#check2:checked~.buttons-bar .gallery .networking
-{
-    opacity: 0;
-    transform: scale(0);
-    position: relative;
-}
-#check3:checked ~ .buttons-bar .gallery .graphics{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#check4:checked ~ .buttons-bar .gallery .cyber{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
-#check:checked ~ .buttons-bar .gallery .networking{
-    opacity: 1;
-    transform: scale(1);
-    position: relative;
-}
