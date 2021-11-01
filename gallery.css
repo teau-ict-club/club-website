@@ -29,6 +29,11 @@
     flex-direction: row;
     align-items: center;
 }
+.right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
 .navbar-right {
     float: right !important;
     margin-right: 15px;
@@ -46,10 +51,85 @@
     padding-top: .5rem;
     padding-bottom: .5rem;
 }
+.bi-menu-button-wide-fill {
+    color: #13d203;
+    font-weight: 700;
+    margin-right: 8px;
+    cursor: pointer;
+    display: none;
+}
 .logo{
     position: inherit;
     width: 16rem;
     -ms-flex-align: start;
+}
+.search-cont{
+    background: #ffffff00;
+    display: flex;
+    flex-direction: row;
+    border: 3px solid #ffffff;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 30px;
+    margin: 0 auto;
+    width: auto;
+    max-width: 584px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.bi-search {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    margin-left: 2px;
+    color: rgba(19, 210, 3, 0.7);
+}
+.search-area {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.search-btn{
+    display: flex;
+    margin-right: 15px !important;
+    margin-left: 15px !important;
+    border: 3.5px solid rgba(120, 230, 103, 1);
+    border-radius: 20px;
+    padding: 5px;
+    height: 30px;
+    background-color: white;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+    color: rgba(120, 230, 103, 1);
+}
+.search-btn:hover{
+    color: white;
+    cursor: pointer;
+    border: 3.5px solid white;
+    background-color: rgba(120, 230, 103, 1);
+}
+.search-box {
+    background-color: white;
+    border: none;
+    padding: 0;
+    color: rgba(120, 230, 103, 1);
+    word-wrap: break-word;
+    outline: none;
+    display: flex;
+    flex: 100%;
+    -webkit-tap-highlight-color: transparent;
+    height: 24px;
+    font-size: 16px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 2px;
+}
+::placeholder{
+    color: rgba(120, 230, 103, 1);
 }
 .menu-bar{
     display: block;
@@ -111,8 +191,16 @@ a{
     display: none;
 }
 .gallery .img-container.show {
-    display: grid;
-    transition: 0.5s ease;
+    animation: animate 0.5s ease;
+}
+@keyframes animate {
+    0% {
+        transform: scale(0.5);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }
 .img-container{
     position: relative;
@@ -139,7 +227,7 @@ a{
     z-index: 700;
 }
 .img-container::before {
-    content: 'Gallery';
+    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
@@ -164,7 +252,7 @@ input{
     margin-bottom: 10px;
     align-items: center;
 }
-span{
+.item{
     margin: 0 5px;
     height: 2rem;
     display: flex;
@@ -187,4 +275,70 @@ span{
     color: white;
     cursor: pointer;
 }
+.img-box{
+    background: rgba(0, 0, 0, 0.6);
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+    transition: 0.4s ease-in-out;
+}
+.img-box.open{
+    opacity: 1;
+    pointer-events: all;
+}
+.img-box p{
+    color: white;
+    font-size: 2rem;
+    position: absolute;
+    bottom: 5%;
+    left: 50%;
+    transform: translate(-50%, -5%);
+}
+.full-img{
+    position: absolute;
+    height: 70%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.5);
+}
+.full-img.open{
+    transform: translate(-50%, -50%) scale(1);
+}
+@media(max-width: 900px) {
+    .buttons-bar {
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        background-color: rgba(226, 248, 219, 0.6);
+        padding: 5 px;
+        flex-wrap: wrap;
+        width: auto;
+        height: auto;
+        margin-bottom: 10 px;
+        align-items: center;
+    }
 
+    .item {
+        margin: 5px;
+    }
+
+    .nav,
+    .navbar-nav,
+    .navbar-right {
+        display: none;
+    }
+
+    .bi-menu-button-wide-fill {
+        display: block;
+    }
+}
+
+.bi-x {
+    cursor: pointer;
+    display: none;
+}

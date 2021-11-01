@@ -20,3 +20,26 @@ window.onload = () => {
         }
     }
 }
+
+let imgBox = document.querySelector(".img-box")
+let previews = document.querySelectorAll(".gallery img")
+let original = document.querySelector(".full-img")
+let imgText = document.querySelector(".caption")
+
+previews.forEach(preview => {
+    preview.addEventListener('click', () => {
+        imgBox.classList.add("open")
+        original.classList.add("open")
+        let originalSrc = preview.getAttribute('data-original')
+        original.src = originalSrc
+        let altText = preview.alt
+        imgText.textContent = altText
+    })
+})
+
+imgBox.addEventListener("click", (e) => {
+    if (e.target.classList.contains("img-box")) {
+        imgBox.classList.remove("open")
+        original.classList.remove("open")
+    }
+})
