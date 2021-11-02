@@ -63,6 +63,12 @@
     width: 16rem;
     -ms-flex-align: start;
 }
+.links{
+    color: whitesmoke;
+}
+.links:hover, .current{
+    color: #0005ff;
+}
 .search-cont{
     background: #ffffff00;
     display: flex;
