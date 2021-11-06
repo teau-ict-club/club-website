@@ -5,7 +5,7 @@ The Oficial TEAU ICT CLUB Website.
 Design Url : TO DO
 
 ### Live Release
-Live Site : TO DO
+Live Site : <a href="https://teauictclub.web.app/">View Here</a>
 
 ## Project Description
 
