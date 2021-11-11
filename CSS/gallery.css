@@ -13,8 +13,8 @@
 }
 .navbar-light {
     background: rgba(226, 248, 219, 0.5);
-    margin-left: 0.6rem;
-    margin-right: 0.6rem;
+    margin-left: 0rem;
+    margin-right: 0rem;
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
@@ -45,7 +45,7 @@
     display: flex;
     position: relative;
     min-height: 50px;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     border: 1px solid transparent;
     justify-content: space-between;
     padding-top: .5rem;
