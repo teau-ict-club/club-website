@@ -112,6 +112,7 @@ a:hover {
 }
 #left {
     float: left;
+	background: rgba(226, 248, 219, 0.6);
     width: 25%;
     height: 100%;
     overflow: auto;
@@ -132,6 +133,7 @@ a:hover {
 #right {
     float: left;
     width: 25%;
+	padding: 2%;
     height: 100%;
    overflow: auto;
 	-webkit-overflow-scrolling: touch;
@@ -356,10 +358,15 @@ button.primaryContained:hover {
 .web-img{
 	background-image: url("../images/web-img.jpg");
 	padding: 0%;
-	margin:0%;
+	margin:3%;
 	background-size: cover;
 	height: 60%;
+	border-radius: 30px;
 }
+img.rounded-corners {
+	border-radius: 30px;
+  }
+  
 
 /* Css for resources page */
 /* Add a black background color to the top navigation */
