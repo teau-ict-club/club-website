@@ -1,0 +1,19 @@
+/*CSS for Announcement Page*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+/*CSS for Announcement Page*/
+.hero{
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, #6aC1C5, #bda5ff);
+}
+#calendar{
+  width: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+}

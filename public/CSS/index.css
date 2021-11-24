@@ -20,7 +20,9 @@ a:hover {
 	color: #57606f;
 	text-decoration: none;
   }
-  
+  li{
+	  list-style: none;
+  }
 .menu{
 	text-align: center;
 	margin: 0%;
@@ -51,6 +53,7 @@ a:hover {
 .image{
 	align-items: center;
 	margin-left: 10%;
+	border-radius: 10px;
 }
 .wel-body{
 	background-color: white;
@@ -179,10 +182,6 @@ table tr td{
 	
 
 }
-
-
-
-
 .a-web{
 	color: #0be881;
 	float: right;
@@ -363,6 +362,14 @@ button.primaryContained:hover {
 	height: 60%;
 	border-radius: 30px;
 }
+.mobile-img{
+	background-image: url("../images/mobile2.jpg");
+	padding: 0%;
+	margin:3%;
+	background-size: cover;
+	height: 60%;
+	border-radius: 30px;
+}
 img.rounded-corners {
 	border-radius: 30px;
   }
@@ -396,3 +403,5 @@ img.rounded-corners {
 	background-color: #04AA6D;
 	color: white;
   }
+
+  
