@@ -1,0 +1,18 @@
+.article {
+    background-color: #c1f6ed;
+    padding-left: 25px;
+  }
+  .content {
+    background-color: rgb(204, 199, 199);
+  }
+  
+  #description1 {
+    font-size: 2em;
+    padding-left: 50px;
+  }
+  
+  #description2 {
+    font-size: 2em;
+    padding-left: 50px;
+  
+  }
