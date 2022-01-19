@@ -201,3 +201,6 @@ a {
     position: relative;
     margin-bottom: 60px;
 }
+li {
+    text-decoration: none;
+}
