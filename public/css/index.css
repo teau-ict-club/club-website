@@ -161,3 +161,47 @@ a {
     align-items: center;
     color: rgb(255, 255, 255);
 }
+.bod-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: url(img/school/1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: auto;
+    max-height: 100%;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    transition: 2000ms;
+}
+.mission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+    width: fit-content;
+    max-width: 40%;
+    background-color: rgba(240, 248, 255, 0.712);
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 60px;
+}
+.vission{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    width: fit-content;
+    max-width: 40%;
+    background-color: rgba(240, 248, 255, 0.712);
+    margin-top: 60px;
+    position: relative;
+    margin-bottom: 60px;
+}
+ul {
+    text-decoration: none;
+}
+
