@@ -165,7 +165,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(img/school/1.png);
+    background-image: url(/public/img/school/1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -200,6 +200,11 @@ a {
     margin-top: 60px;
     position: relative;
     margin-bottom: 60px;
+}
+.vission h2{
+    position: absolute;
+    top: 0%;
+    align-self: center;
 }
 ul {
     text-decoration: none;
