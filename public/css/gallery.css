@@ -27,6 +27,7 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
 }
 .right {
@@ -184,7 +185,7 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     min-height: 400px;
     grid-gap: 1.2rem;
-    background-image: url(img/assets/bg.svg);
+    background-image: url(/public/img/assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
