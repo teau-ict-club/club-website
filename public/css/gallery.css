@@ -273,6 +273,7 @@ input{
     margin-bottom: 10px;
     align-items: center;
 }
+
 .item{
     margin: 0 5px;
     height: 2rem;
@@ -404,4 +405,21 @@ input{
         display: contents;
         position: inherit;
     }
+}
+@media (max-width: 900px){
+     .buttons-bar {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    background-color: rgba(226, 248, 219, 0.6);
+    padding: 5 px;
+    flex-wrap: wrap;
+    width: auto;
+    height: auto;
+    margin-bottom: 10 px;
+    align-items: center;
+}
+.item {
+    margin: 5px;
+}
 }
