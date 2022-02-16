@@ -330,36 +330,75 @@ input{
 .full-img.open{
     transform: translate(-50%, -50%) scale(1);
 }
-@media(max-width: 900px) {
-    .buttons-bar {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        background-color: rgba(226, 248, 219, 0.6);
-        padding: 5 px;
-        flex-wrap: wrap;
-        width: auto;
-        height: auto;
-        margin-bottom: 10 px;
-        align-items: center;
-    }
 
-    .item {
-        margin: 5px;
-    }
-
-    .nav,
-    .navbar-nav,
-    .navbar-right {
-        display: none;
-    }
-
-    .bi-menu-button-wide-fill {
-        display: block;
-    }
+.navbar-light .navbar-nav .nav-link {
+    color: aliceblue;
 }
 
-.bi-x {
-    cursor: pointer;
-    display: none;
+.navbar-light .navbar-nav .nav-link:focus,
+.navbar-light .navbar-nav .nav-link:hover {
+    color: #0005ff;
+}
+
+.dropdown-menu[data-bs-popper] {
+    top: 100%;
+    right: 40rem;
+    left: -5.3rem;
+    margin-top: 0.125rem;
+}
+
+@media (max-width: 992px) {
+    .container-fluid .nav .navbar-nav .navbar-right {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-brand .logo {
+        padding-top: 0.3125rem;
+        padding-bottom: 0.3125rem;
+        margin-right: 1rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        white-space: nowrap;
+    }
+
+    .navbar-toggler {
+        margin-right: 15px;
+    }
+
+    .right {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        margin-left: initial;
+        height: inherit;
+        flex-direction: column;
+    }
+
+    .nav ul {
+        padding: 2px;
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: aliceblue;
+    }
+
+    .navbar-light .navbar-nav .nav-link:focus,
+    .navbar-light .navbar-nav .nav-link:hover {
+        color: #0005ff;
+    }
+    .navbar-nav .dropdown-menu {
+        position: unset;
+    }
+    /* .dropdown-menu{
+        position: absolute;
+    } */
+    .dropdown-menu[data-bs-popper] {
+        top: 100%;
+        right: 40rem;
+        margin-top: 0.125rem;
+    }
 }
