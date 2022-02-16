@@ -342,7 +342,6 @@ input{
 
 .dropdown-menu[data-bs-popper] {
     top: 100%;
-    right: 40rem;
     left: -5.3rem;
     margin-top: 0.125rem;
 }
@@ -390,15 +389,19 @@ input{
     .navbar-light .navbar-nav .nav-link:hover {
         color: #0005ff;
     }
-    .navbar-nav .dropdown-menu {
-        position: unset;
-    }
     /* .dropdown-menu{
         position: absolute;
     } */
     .dropdown-menu[data-bs-popper] {
         top: 100%;
-        right: 40rem;
+        left: 0px;
         margin-top: 0.125rem;
+    }
+    .navbar-nav .dropdown-menu {
+        position: static;
+    }
+    .dropdown-menu.show {
+        display: contents;
+        position: inherit;
     }
 }
