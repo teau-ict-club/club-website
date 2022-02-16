@@ -30,6 +30,13 @@
     flex-wrap: nowrap;
     align-items: center;
 }
+.container-fluid{
+    padding-right: initial;
+    width: fit-content;
+}
+.collapse:not(.show){
+    display: "";
+}
 .right {
     display: flex;
     flex-direction: column;
@@ -51,6 +58,13 @@
     justify-content: space-between;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+.dropdown-item {
+    color: #13d203;
+}
+.dropdown-menu-dark{
+    background-color: #13d203;
+    color: #ffffff;
 }
 .bi-menu-button-wide-fill {
     color: #13d203;

@@ -30,6 +30,7 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
 }
 
@@ -48,6 +49,15 @@
     float: left;
 }
 
+.container-fluid {
+    padding-right: initial;
+    width: fit-content;
+}
+
+.collapse:not(.show) {
+    display: "";
+}
+
 .navbar1 {
     display: flex;
     position: relative;
@@ -57,6 +67,15 @@
     justify-content: space-between;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+
+.dropdown-item {
+    color: #13d203;
+}
+
+.dropdown-menu-dark {
+    background-color: #13d203;
+    color: #ffffff;
 }
 
 .bi-menu-button-wide-fill {
