@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,12 +10,13 @@
     <link rel="stylesheet" href="css/index.css">
     <title>Home</title>
 </head>
+
 <body>
 
     <div class="main-body">
-        <nav class="navbar1 navbar-light" style="background: rgba(226, 248, 219, 0.6);">
-    
-            <div class="navbar-header">
+        <nav class="navbar1 navbar navbar-expand-lg navbar-light" style="background: rgba(226, 248, 219, 0.6);">
+
+            <div class="navbar-header container-fluid">
                 <img src="img/assets/logo3.png" alt="" class="logo">
             </div>
             <div class="right">
@@ -25,16 +27,37 @@
                             d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
                     </svg>
                 </i>
-                <div class="nav navbar-nav navbar-right">
-                    <ul class="nav navbar-nav navbar-right" style="text-decoration: none;>
-                        <li><a href="index.html" class="links current">Home</a></li>
-                        <li><a href="gallery.html" class="links">Gallery</a></li>
-                        <li><a href="constitution.html" class="links">Constitution</a></li>
-                        <li><a href="register.html" class="links">Log in</a></li>
-                        <li><a href="contacts.html" class="links">Contact</a></li>
-                        <li><a href="register.html" class="links">club's portal</a></li>
-                    </ul>
-                </div>
+                <nav class="navbar-expand-lg">
+                    <div class="container-fluid nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="index.html" class="links current">Home</a></li>
+                            <li><a href="gallery.html" class="links">Gallery</a></li>
+                            <li><a href="constitution.html" class="links">Constitution</a></li>
+                            <li><a href="register.html" class="links">Register</a></li>
+                            <li><a href="register.html" class="links">Log in</a></li>
+                            <li><a href="contacts.html" class="links">Contact</a></li>
+                            <li class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown"><a href="#" class="links nav-link dropdown-toggle"
+                                            id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
+                                            aria-expanded="false">
+                                            Teams
+                                        </a>
+                                        <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDarkDropdownMenuLink">
+                                            <li><a class="dropdown-item" href="webdev.html">Web</a></li>
+                                            <li><a class="dropdown-item" href="graphicsdsgn.html">Graphics</a></li>
+                                            <li><a class="dropdown-item" href="cybersec.html">Cyber sec</a></li>
+                                            <li><a class="dropdown-item" href="mobile.html">Mobile Dev</a></li>
+                                            <li><a class="dropdown-item" href="netw.html">Networking</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <!-- <li><a href="#" class = "links">Resources</a></li>
+                                                        the above should only be visible to logged in users -->
+                        </ul>
+                    </div>
+                </nav>
                 <div class="search-area">
                     <div class="search-cont">
                         <div class="search">
@@ -49,7 +72,7 @@
                         <input type="text" class="search-box" maxlength="250" title="search" placeholder="search here">
                     </div>
                     <div class="search-btn">
-                        search 
+                        search
                     </div>
                 </div>
             </div>
@@ -60,9 +83,9 @@
                 <br>
                 <br>
                 <p class="content">
-                The club aims at equipping transforming
-                and mentoring students into innovative persons
-                through the use of ICT.
+                    The club aims at equipping transforming
+                    and mentoring students into innovative persons
+                    through the use of ICT.
                 <p>the club also aims at raising
                     solution givers to both the institution
                     and the society an large.
@@ -75,16 +98,22 @@
                 <br>
                 <p class="content">
                     To become a dynamic world class
-                     institution for innovation 
-                     and technologial solutions.
+                    institution for innovation
+                    and technologial solutions.
                 </p>
             </div>
         </div>
     </div>
 
     <div class="content">
-        To Do
-    </div>
 
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+        integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+        integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

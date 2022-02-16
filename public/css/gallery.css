@@ -27,7 +27,15 @@
     border-radius: 0.5rem;
     display: flex;
     flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
+}
+.container-fluid{
+    padding-right: initial;
+    width: fit-content;
+}
+.collapse:not(.show){
+    display: "";
 }
 .right {
     display: flex;
@@ -50,6 +58,13 @@
     justify-content: space-between;
     padding-top: .5rem;
     padding-bottom: .5rem;
+}
+.dropdown-item {
+    color: #13d203;
+}
+.dropdown-menu-dark{
+    background-color: #13d203;
+    color: #ffffff;
 }
 .bi-menu-button-wide-fill {
     color: #13d203;
@@ -184,7 +199,7 @@ a{
     grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     min-height: 400px;
     grid-gap: 1.2rem;
-    background-image: url(img/assets/bg.svg);
+    background-image: url(/public/img/assets/bg.svg);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
