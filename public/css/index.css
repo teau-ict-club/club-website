@@ -184,7 +184,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(/public/img/school/1.png);
+    background-image: url(img/1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -243,6 +243,21 @@ ul {
     right: 40rem;
     left: -5.3rem;
     margin-top: 0.125rem;
+}
+
+.body-content {
+    background-color: #edfbe9;
+}
+
+.body-content h1{
+    align-self: center;
+    text-align: center;
+}
+
+.row{
+    margin-top: 10px;
+    margin-right:inherit;
+    margin-left:inherit;
 }
 
 @media (max-width: 992px){
