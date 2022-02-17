@@ -245,6 +245,16 @@ ul {
     margin-top: 0.125rem;
 }
 
+.body-content {
+    background-color: burlywood;
+}
+
+.row{
+    margin-top: 10px;
+    margin-right:inherit;
+    margin-left:inherit;
+}
+
 @media (max-width: 992px){
     .container-fluid .nav .navbar-nav .navbar-right{
         display: flex;
