@@ -184,7 +184,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-image: url(/public/img/school/1.png);
+    background-image: url(img/1.png);
     background-repeat: no-repeat;
     background-size: cover;
     width: auto;
@@ -246,7 +246,12 @@ ul {
 }
 
 .body-content {
-    background-color: burlywood;
+    background-color: #edfbe9;
+}
+
+.body-content h1{
+    align-self: center;
+    text-align: center;
 }
 
 .row{
