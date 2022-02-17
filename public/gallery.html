@@ -13,12 +13,18 @@
 
 <body>
     <div class="body">
-        <nav class="navbar1 navbar-light" style="background: rgba(226, 248, 219, 0.6);">
+        <nav class="navbar1 navbar navbar-expand-lg  navbar-light" style="background: rgba(226, 248, 219, 0.6);">
 
             <div class="navbar-header">
-                <img src="img/assets/logo3.png" alt="" class="logo">
+                <a href="" class="navbar-brand">
+                    <img src="img/assets/logo3.png" alt="" class="logo">
+                </a>
             </div>
-            <div class="right">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="right collapse navbar-collapse" id="navbarSupportedContent">
                 <i class="bi bi-menu-button-wide-fill">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
                         class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
@@ -28,14 +34,14 @@
                 </i>
                 <nav class="navbar-expand-lg">
                     <div class="container-fluid nav navbar-nav navbar-right">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav navbar-right navbar-nav me-auto mb-2 mb-lg-0">
                             <li><a href="index.html" class="links">Home</a></li>
                             <li><a href="gallery.html" class="links current">Gallery</a></li>
                             <li><a href="constitution.html" class="links">Constitution</a></li>
                             <li><a href="register.html" class="links">Register</a></li>
                             <li><a href="register.html" class="links">Log in</a></li>
                             <li><a href="contacts.html" class="links">Contact</a></li>
-                            <li class="collapse navbar-collapse" id="navbarNavDarkDropdown">
+                            <li class="nav-item dropdown" id="navbarNavDarkDropdown">
                                 <ul class="navbar-nav">
                                     <li class="nav-item dropdown"><a href="#" class="links nav-link dropdown-toggle"
                                             id="navbarDarkDropdownMenuLink" role="button" data-bs-toggle="dropdown"
