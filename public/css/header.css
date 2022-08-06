@@ -41,7 +41,7 @@
            /* border: 1px solid greenyellow;*/
        }
 
-       .logo-container {
+       .header-logo-container {
            /*  border: 1px solid gray;*/
            position: absolute;
            margin-top: 10px;
@@ -50,7 +50,7 @@
            align-items: center;
        }
 
-       .logo-container>span {
+       .header-logo-container>span {
            display: inline-block;
            text-align: center;
            /* border:  2px solid brown;*/
@@ -59,7 +59,7 @@
            padding: 2px 5px;
        }
 
-       .logo {
+       .header-logo {
            align-self: center;
            height: 30px;
            width: 30px;
@@ -68,7 +68,7 @@
            align-self: center;
        }
 
-       .logo>img {
+       .header-logo>img {
            width: 100%;
            height: 100%;
        }
