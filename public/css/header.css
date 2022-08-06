@@ -130,6 +130,7 @@
            padding: 20px 10px 40px 10px;
            display: none;
            flex-flow: row;
+           z-index: 5;
        }
 
        .dropdown-list {
