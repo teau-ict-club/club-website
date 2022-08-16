@@ -1,0 +1,189 @@
+.menu{
+    border: 1px solid black;
+    text-align: center;
+}
+.main-body{
+    border: 1px solid black;
+}
+.frow{
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+	background-color: darkgreen;
+}
+.fcolumn{
+	display: flex;
+	flex-direction: column;
+	flex: 1;
+	
+}
+.fcolumn-one{
+	background-color: cornsilk;
+	height: 100px;
+	width: 50%;
+}
+.fcolumn-two{
+	background-color: darkgray;
+	height:100px;
+	
+}
+.flex-gap > div {
+	margin: 1px; /* HERE WE ADD THE SPACE */
+  }
+.p-header{
+	text-align: center;
+	text-transform: uppercase;
+	transition: all 4s ease-in-out;
+	color: white;
+	font-size: 30px;
+	background-color: #2ed573;
+	
+    
+}
+
+.td-departments{
+    width:140px;
+    border: 1px solid black;
+	font-weight: bold;
+	font-size: medium;
+	color: #ffff;
+	
+}
+.td-members{
+    background-color:#f1f2f6;
+    width:250px;
+    border: 1px solid black;
+    padding: 3%;
+    margin: 1%;
+}
+.td-projects{
+    background-color: #f1f2f6;
+    border: 1px solid black;
+    width: 150px;
+    padding: 3%;
+}
+
+.footer{
+    border: 1px solid black;
+	padding: 1%;
+	text-align: center;
+}
+/*comment css starts here*/
+.container {
+	background: #fff;
+	border-radius: 8px;
+
+	
+}
+.row{
+	padding: 1%;
+	
+}
+.comment {
+	display: block;
+	transition: all 1s;
+}
+.commentClicked {
+	min-height: 0px;
+	border: 1px solid #eee;
+	border-radius: 5px;
+	padding: 5px 10px
+}
+.container textarea {
+	width: 100%;
+	border: none;
+	background: #E8E8E8;
+	padding: 5px 13px;
+	height: 50%;
+	border-radius: 5px 5px 0px 0px;
+	border-bottom: 2px solid #016BA8;
+	transition: all 0.5s;	
+	margin-top: 15px;
+}
+button.primaryContained {
+	background: #016ba8;
+	color: #fff;
+	padding: 10px 10px;
+	border: none;
+	margin-top: 0px;
+	cursor: pointer;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.25);
+	transition: 1s all;
+	font-size: 13px;
+	border-radius: 5px;
+}
+/* rating css starts here*/
+* {
+	box-sizing: border-box;
+
+  }
+  .rating{
+	  padding: 1%;
+	  margin: 4%;
+  }
+  .heading {
+	font-size: 25px;
+	margin-right: 25px;
+  }
+  
+  .fa {
+	font-size: 25px;
+  }
+  
+  .checked {
+	color: orange;
+  }
+  
+  /* Three column layout */
+  .side {
+	float: left;
+	width: 15%;
+	margin-top: 10px;
+  }
+  
+  .middle {
+	float: left;
+	width: 70%;
+	margin-top: 10px;
+  }
+  
+  /* Place text to the right */
+  .right {
+	text-align: right;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  /* The bar container */
+  .bar-container {
+	width: 100%;
+	background-color: #f1f1f1;
+	text-align: center;
+	color: white;
+  }
+  
+  /* Individual bars */
+  .bar-5 {width: 60%; height: 18px; background-color: #04AA6D;}
+  .bar-4 {width: 30%; height: 18px; background-color: #2196F3;}
+  .bar-3 {width: 10%; height: 18px; background-color: #00bcd4;}
+  .bar-2 {width: 4%; height: 18px; background-color: #ff9800;}
+  .bar-1 {width: 15%; height: 18px; background-color: #f44336;}
+  
+  /* Responsive layout - make the columns stack on top of each other instead of next to each other */
+  @media (max-width: 400px) {
+	.side, .middle {
+	  width: 100%;
+	}
+	/* Hide the right column on small screens */
+	.right {
+	  display: none;
+	}
+  }
