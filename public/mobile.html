@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/welcome.css">
+    <link rel="stylesheet" href="CSS/index.css">
+    <link rel="stylesheet" href="CSS/gallery.css">
     <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.17/vue.min.js'></script>
 <!-- jQuery -->
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
@@ -15,14 +16,60 @@
     <title>Document</title>
 </head>
 <body>
+    <div>
+        <nav class="navbar1 navbar-light" style="background: rgba(226, 248, 219, 0.6);">
+
+            <div class="navbar-header">
+                <img src="img/assets/logo3.png" alt="" class="logo">
+            </div>
+            <div class="right">
+                <i class="bi bi-menu-button-wide-fill">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor"
+                        class="bi bi-menu-button-wide-fill" viewBox="0 0 16 16">
+                        <path
+                            d="M1.5 0A1.5 1.5 0 0 0 0 1.5v2A1.5 1.5 0 0 0 1.5 5h13A1.5 1.5 0 0 0 16 3.5v-2A1.5 1.5 0 0 0 14.5 0h-13zm1 2h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1 0-1zm9.927.427A.25.25 0 0 1 12.604 2h.792a.25.25 0 0 1 .177.427l-.396.396a.25.25 0 0 1-.354 0l-.396-.396zM0 8a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V8zm1 3v2a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2H1zm14-1V8a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v2h14zM2 8.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0 4a.5.5 0 0 1 .5-.5h6a.5.5 0 0 1 0 1h-6a.5.5 0 0 1-.5-.5z" />
+                    </svg>
+                </i>
+                <div class="nav navbar-nav navbar-right">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="#" class = "links">Home</a></li>
+                        <li><a href="#" class = "links">Gallery</a></li>
+                        <li><a href="#" class = "links">Constitution</a></li>
+                        <li><a href="#" class = "links">Register</a></li>
+                        <li><a href="#" class = "links">Log in</a></li>
+                        <li><a href="#" class = "links">Contact</a></li>
+                        <li><a href="#" class = "links">Teams</a></li>
+                        <li><a href="#" class = "links">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="search-area">
+                    <div class="search-cont">
+                        <div class="search">
+                            <i class="bi bi-search">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                    class="bi bi-search" viewBox="0 0 16 16">
+                                    <path
+                                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                                </svg>
+                            </i>
+                        </div>
+                        <input type="text" class="search-box" maxlength="250" title="search" placeholder="search here">
+                    </div>
+                    <div class="search-btn">
+                        search
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
     <div id="content">
         <div id="left">
             <table>
                 <tr>
                     <td class="bg">
-                         <a href="welcome.html">Welcome</a> <br>
-                         <a href="">General resources</a> <br>
-                         <a href="">ICT Club Announcements</a> <br>
+                         <a href="index.html">Welcome</a> <br>
+                         <a href="genres.html">General resources</a> <br>
+                         <a href="announc.html">ICT Club Announcements</a> <br>
                         <a href="webdev.html">Web developers</a> <br>
                         <a href="mobile.html">Mobile developers</a> <br>
                         <a href="cybersec.html">Cyber Security</a> <br>
@@ -36,21 +83,25 @@
             </table>
         </div>
         <div id="center">
+            <h1 class="header" style="color: #333;">  Teau Ict-Club Mobile Developers</h1>
+            <a class="a-web" href="">Join Us</a> <br><br>
+                <div class="mobile-img" >
+                
+                
+                 <br><br>
+                 </div>
             <div class="c-center">
-                <h1 class="header">Mobile developers</h1>
-                <a class="a-web" href="">Join Us</a> <br><br>
-                <img style="padding: 2%;" class="image" src="img/mobile2.jpg" alt="" width=70% height=250px%> <br><br>
                 <h1 style="margin: 2%; padding: 2%;">Projects</h1>
                 <ul>
                     <li style="margin-left: 3%;"> 
-                       <a style="color: blue;" href="">School Club App</a>
+                       <a style="color: blue;" href="">School Mobile App</a>
                     </li>
                 </ul>
                 <div>
                     <h1 style="margin-left: 2%; padding: 2%;">Activities</h1>
                 <ul>
                     <li style="margin-left: 3%;"> 
-                        School club App
+                       Developing TeauApp
                     </li>
                 </ul>
                 </div>
@@ -58,11 +109,10 @@
                     <h1 style="margin: 2%; padding: 2%;">Achievements</h1>
                 <ul>
                     <li style="margin-left: 3%;"> 
-                        School club App
+                        School Mobile App
                     </li>
                 </ul>
                 </div>
-
                 <div>
                     
                     <div style="margin-top: 10%;" class="comment">
@@ -87,9 +137,8 @@
                            </section><!-- end App -->
                      </div>
                 </div>
-
-            </div>
-        </div>
+                </div>
+           </div>
         <div id="right">
             <section class="team">
                 <div class="container-team">
@@ -98,7 +147,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img style="float: center;" src="img/linus.jpg" alt="" class="img-responsive"  >
+                                <img style="float: left;" src="images/linus.jpg" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                     Linus Mugera Developer <br>
@@ -110,7 +159,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Kimberly Msabeni Developer <br>
@@ -122,7 +171,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Muriithi Gakuru Developer <br>
@@ -134,7 +183,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Daniel Crispa Developer <br>
@@ -146,7 +195,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Chalie Chalie Developer <br>
@@ -158,7 +207,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Mike Wanyua Developer <br>
@@ -170,7 +219,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Christine Naito Developer <br>
@@ -182,7 +231,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Erastus Erastus Developer <br>
@@ -194,7 +243,7 @@
                         <div class="col-md-3">
                             <div class="img-box, col-md-3">
                                 <div id = img-left>
-                                <img src="img/" alt="" class="img-responsive"  >
+                                <img src="images/" alt="" class="img-responsive"  >
                             </div>
                             <div id="inf-right">
                                 Name Name Developer <br>
@@ -207,6 +256,6 @@
                 </div>
             </section>
         </div>
-        <script src="js/welcome.js"></script>
+        <script src="javascript/index.js"></script>
 </body>
 </html>
